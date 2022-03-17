@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #bf930d;
+}
+/*coloca el menu en orden*/
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 1000;
+}
+
+
+
+#header .logo img {
+  height: 5rem;
+}
+/*barra de navegacion acomodada*/
+#header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+#header nav ul li {
+  margin-right: 4rem;
+}
+
+#header nav ul li a {
+  color: #fff;
+  font-size: 2rem;
+  background: rgb(24, 23, 23);
+}
+
+#header nav ul li a:hover {
+  color: #00ffaa;
+  text-decoration: none;
+}
+/*fondo de primera pagina*/
+#inicio {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(0deg, rgba(12, 11, 11, 0.6), rgba(192, 77, 77, 0.6));/*drgradado*/
+  position: relative;
+}
+
+#inicio .content h1 {  /*ajustes letra verde*/
+  font-size: 5rem;
+  font-family: 'lemonada',sans-serif;
+  font-weight: bolder;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #00ffaa;
+}
+ /*ajustes letra blanca*/
+#inicio .content h2 {
+  font-size: 3.5rem;
+  font-family: 'lemonada',sans-serif;
+  font-weight: bolder;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+#inicio .content p {   /*tercera letra*/
+  font-size: 1.6rem;
+  color: #ccc;
+}
+/*colocando la imagen en un lado*/
+#inicio .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+/*colocando la imagen en toda la pagina*/
+#inicio .img-container .vid1 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+#inicio .img-container .vid1 {
+  display: block;
+}
+
+
+#inicio .controls .dots:hover {
+  background: #fff;
+}
+#ventajas{/*esto lo se agregue en la tabla*/
+  min-height: 100vh;
+  width: 100vw;
+  background: url(../imagenes/prueba.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+
+#ventajas .heading h1 {
+  font-size: 4rem;
+  color: #000;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+#ventajas .heading h1 span {
+  color: #00ffaa;
+}
+
+#ventajas .content {
+  margin: 5rem auto;
+}
+/*2*/
+#ventajas .content p {
+  font-size: 2rem;
+}
+#galeria {
+  min-height: 100vh;
+  width: 100vw;
+    }
+    #galeria .heading h1 {
+      font-size: 4rem;
+      color: #000;
+      padding-top: 7rem;
+      margin-bottom: 2rem;
+    }
+    
+    #galeria .heading h1 span {
+      color: #00ffaa;
+    }
+
+#galeria .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+#galeria .box-container .box {
+  height: 20rem;
+  width: 25rem;
+  border-radius: .5rem;
+  margin: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 0 .5rem rgb(202, 29, 29);
+          box-shadow: 0 0 .5rem rgb(247, 23, 23);
+}
+
+#galeria .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+
+
+#contacto {           /*iamgen de fondo de c*/
+  min-height: 100vh;
+  width: 100vw;
+  background: url(../imagenes/contactoimagen.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*tamñoletra*/#contacto .heading h1 {
+  font-size: 4rem;
+  color: #000;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+#contacto .heading h1 span {
+  color:#00ffaa;
+}
+
+#contacto form {     /*estilos a formulario*/
+  background: #fff;
+  padding-top: 2rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 2rem #333;
+          box-shadow: 0 0 2rem #333;
+}
+
+#contacto form input[type="submit"] {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 4rem;
+  width: 12rem;
+  margin-bottom: 2rem;
+  margin-left: 4%;
+  background: #333;
+  color: #fff;
+}
+
+#contacto form input[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:#00ffaa;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+#contacto form input[type="submit"]:hover::before {
+  width: 100%;
+}
+
+#contacto form input[type="submit"]:hover {
+  color: #333;
+  background: #00ffaa;
+}
+
+#footer {
+  background: rgb(19, 18, 18);
+}
+
+#footer h1 {   /*letra final del footer*/
+  font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+#footer h1 span {
+  color: #00ffff;
+}
+
+#footer .brand a .logo img {
+  height: 4rem;
+}
+
+
+/*tabla*/
+/*estilos de tabla   */
+table  {   width: 700px; border-collapse: collapse;}
+
+td, th { border: 3px solid transparent; height: 50px; }
+
+th { font-family: Georgia, Times, 'Times New Roman', serif;background: #D3D3D3; font-weight: bold; text-align: center; }
+
+td {font-family: Georgia, Times, 'Times New Roman', serif;    background: #FAFAFA; text-align: center; }
+
+tr:nth-child(even) td { background:#F1F1F1; text-align: center; }  
+
+tr:nth-child(odd) td { background: #FEFEFE; text-align: center;} 
+
+tr td:hover { background: rgb(80, 122, 17); color: #FFF; }
+
